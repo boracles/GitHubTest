@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CubeCtrl : MonoBehaviour
 {
-    public float moveSpeed = 10.0f;
+    public float moveSpeed = 15.0f;
     public float turnSpeed = 80.0f;
     
     private float h;
