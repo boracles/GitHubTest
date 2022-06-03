@@ -34,10 +34,13 @@ public class CubeCtrl : MonoBehaviour
         */
     }
 
+    // 충돌이 시작할 때 발생하는 이벤트
     private void OnCollisionEnter(Collision coll)
     {
+        // 충돌한 콜라이더의 오브젝트에 할당된 태그명 확인
         if (coll.collider.CompareTag("DUM"))
         {
+            // 충돌한 콜라이더의 게임 오브젝트 삭제
             Destroy(coll.gameObject);
         }
     }
